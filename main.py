@@ -1,6 +1,8 @@
 import random
 
-
+print("kio ora ")
+name = input("what your name? ")
+print("welcome to the Te Reo maori QUIZ " + name)
  
   # globals and question  list
 
@@ -50,14 +52,16 @@ def generate_question(english, right_answer, option_1, option_2 ):
       print ("incorrect")
       
   print("current score is :"+ str(score))
-#genrate 3 questions pulling possible answer
+#genrate 10 questions pulling possible answer
 for i in range(0,10):
  generate_question(english[i],right_answer[i],option_1[i],option_2[i])
 
-if score>7:
-  print("look at this nice calming waves video to listen to as a reward https://www.youtube.com/watch?v=V-_O7nl0Ii0&list=PL3KnTfyhrIlcudeMemKd6rZFGDWyK23vx&index=4") 
-
-print(score)
+if score>=7:
+  print(" it is calming waves video to listen as a reward https://www.youtube.com/watch?v=V-_O7nl0Ii0&list=PL3KnTfyhrIlcudeMemKd6rZFGDWyK23vx&index=4") 
+if score<=6: 
+  
+ print("this is because you failed https://www.youtube.com/watch?v=dQw4w9WgXcQ") 
+ print(score)
 
 
 
